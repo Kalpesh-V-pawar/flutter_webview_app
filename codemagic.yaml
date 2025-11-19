@@ -3,8 +3,8 @@ workflows:
     name: Flutter WebView App
     environment:
       flutter: stable
-      xcode: default      # required even if you don't build iOS
-      cocoapods: default  # required even if you don't build iOS
+      xcode: default
+      cocoapods: default
     scripts:
       - name: Install dependencies
         script: |
