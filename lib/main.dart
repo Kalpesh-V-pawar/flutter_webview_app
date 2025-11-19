@@ -31,7 +31,7 @@ class _WebAppState extends State<WebApp> {
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(
-        Uri.parse("https://daily-tasks-update.vercel.app"), // <-- Replace with your website
+        Uri.parse("https://YOUR-WEBSITE.com"), // <-- Replace with your website
       );
   }
 
