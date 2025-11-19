@@ -1,0 +1,17 @@
+workflows:
+  flutter_webview:
+    name: Flutter WebView App
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
+      android: latest
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Build APK
+        script: |
+          flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
